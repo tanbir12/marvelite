@@ -1,0 +1,647 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*___________HEADER DIVISION____________*/
+#header{
+	width: 100%;
+	height: 60px;
+	background-color: #0e0707;
+	display: flex;
+	align-items: center;
+}
+#himg1{
+	width: 150px;
+}
+#himg2{
+	margin-left: 34%;
+	width: 40px;
+	margin-top: -10px;
+	padding: 3px 8px;
+	border-bottom: 3px solid #68d5f0b5;
+}
+#himg3{
+	margin-top: -5px;
+	margin-left: 38%;
+	width: 50px;
+	height: 55px;
+	border-bottom: 2px solid orange;
+	background-image: url('thanoshand.jpg');
+	background-size: 100%;
+	transition: 0s 2s;
+}
+#himg3:active{
+	transition: 0s;
+	background-image: url('thanoshand.gif');
+	}
+
+/*______AVENGERIMAGE MAIN BODY________*/
+#avengerbody{
+	width: 100%;
+	height: 700px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	background-image: url('avengerbg.jpg');
+	background-size: 100% 100%;
+	opacity: 1.0;
+	transition-delay: 2.5s;
+	transition-duration: 3s;
+}
+#about{
+  display: none;
+}
+
+/*____________MAIN BODY_______________*/
+#maindiv{
+	width: 100%;
+	height: 700px;
+	margin-top: -2px;
+	align-items: center;
+	display: flex;
+	background-image: url('bg1.jpg');
+	background-repeat: no repeat;
+	opacity: 1.0;
+	transition-duration: 3s;
+	transition-delay: 2.5s;
+	display: none;
+}
+
+/*__________LEFT ICON BAR____________*/
+#leftbar{
+	width: 3%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#scrollup{
+	width: 80%;
+	height: 5%;
+	margin-top: 450px;
+	background-image: url('scrollup.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#scrolldown{
+	width: 80%;
+	height: 5%;
+	margin-top: 80px;
+	background-image: url('scrolldown.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#scrollup:hover{
+	border: 1px solid red;
+}
+#scrolldown:hover{
+	border: 1px solid red;
+}
+
+/*_____________MENU BAR_____________*/
+#menubar{
+	width: 26%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+}
+
+/*_____________MENU DIVISION________*/
+.menu{
+	width: 93%;
+	min-height: 150px;
+	margin-top: 15px;
+	opacity: 0.4;
+	background-repeat: no-repeat;
+}
+.menu:hover{
+	width: 100%;
+  opacity: 1.0;
+	transition-duration: 200ms;
+}
+.menupara{
+	height: 20px;
+	font-size: 18px;
+	margin-top: 110px;
+	margin-left: 20px;
+	padding-left: 5px;
+	border-left: 2px solid red;
+	color: #cad5d7;
+}
+/*+++++++++++++NTH MENU ADD++++++++++*/
+.menu:nth-child(1){
+	background-image: url('Camerica.jpg');
+	background-size: 300px;
+}
+.menu:nth-child(2){
+	background-image: url('Ironman.jpg');
+	background-size: 300px;
+}
+.menu:nth-child(3){
+	background-image: url('Deadpool.jpg');
+	background-size: 300px;
+}
+.menu:nth-child(4){
+	background-image: url('Blackpanther.jpg');
+	background-size: 300px;
+}
+.menu:nth-child(5){
+	background-image: url('Loki.jpg');
+	background-size: 300px;
+}
+.menu:nth-child(6){
+	background-image: url('Thor.jpg');
+	background-size: 300px;
+}
+.menu:nth-child(7){
+	background-image: url('Thanos.jpg');
+	background-size: 300px;
+}
+.menu:nth-child(8){
+	background-image: url('Hulk.jpg');
+	background-size: 300px;
+}
+.menu:nth-child(9){
+	background-image: url('Dstrange.jpg');
+	background-size: 300px;
+}
+
+/*___________CONTENT BAR_____________*/
+.contentbar{
+	width: 70%;
+	height: 100%;
+	align-items: center;
+	display: flex;
+	display: none;
+}
+#cont1{
+	display: flex;
+}
+
+/*___________TEXT BAR_____________*/
+.textbar{
+	width: 60%;
+	height: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+/*_____________NAME BAR_____________*/
+.namebar{
+	width: 100%;
+	height: 20%;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 10px;
+}
+.namepara1{
+	font-size: 38px;
+	font-weight: 800;
+	color: #e0d7d7;
+	margin-top: 50px;
+	margin-left: 25px;
+	border-bottom: 3px solid red;
+	font-family: 'Gantari', sans-serif;
+}
+.namepara2{
+  font-size: 32px;
+	color: #e0d7d7;
+	margin-top: 50px;
+	margin-left: 14px;
+  font-family: 'Gantari', sans-serif;
+}
+/*_____________DESC BAR_____________*/
+.descbar{
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
+.descpara{
+  min-height: 100%;
+	font-size: 14px;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	padding-right: 25px;
+	color: #e0d7d7;
+	text-align: justify;
+	font-family: 'Marvel', sans-serif;
+}
+
+/*___________PHOTO BAR_____________*/
+.photobar{
+	width: 40%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.contentimg{
+  margin-top: 80px;
+	width: 330px;
+	margin-left: -50px;
+}
+
+/*____________FOOTER_______________*/
+#footer{
+	width: 100%;
+	height: 150px;
+	background-color: #0e0707;
+	display: flex;
+	align-items: center;
+}
+#footer1{
+	width: 25%;
+	height: 100%;
+	margin-left: 40px;
+}
+.footer1para1{
+	display: inline-block;
+	font-size: 20px;
+	color: white;
+	margin-top: 30px;
+}
+.footerpara{
+	font-size: 14px;
+	color: white;
+	text-align: justify;
+}
+#footer2{
+	width: 30%;
+	height: 100%;
+	margin-left: 170px;
+}
+#footer3{
+	width: 20%;
+	height: 100%;
+	margin-left: 40px;
+}
+#footer a img{
+	width: 30px;
+	margin-left: -5px;
+	cursor: pointe;
+}
+#endfooter{
+  width:100%;
+  height: 40px;
+  margin-top: -1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+}
+
+
+@media only screen and (max-width:600px)
+and (orientation: portrait){
+
+body{
+  width: 100%;
+}
+
+/*___________HEADER DIVISION___________*/
+#header{
+	width: 100%;
+	height: 40px;
+	background-color: #0e0707;
+	display: flex;
+	align-items: center;
+}
+#himg1{
+	width: 80px;
+}
+#himg2{
+	margin-left: 25%;
+	width: 25px;
+	height: 26px;
+	margin-top: 0px;
+	padding: 2px 6px;
+	border-bottom: 2px solid #68d5f0b5;
+}
+#himg3{
+	margin-top: -5px;
+	margin-left: 33%;
+	width: 32px;
+	height: 35px;
+	border-bottom: 2px solid orange;
+	background-image: url('thanoshand.jpg');
+	background-size: 100%;
+	transition: 0s 2s;
+}
+#himg3:active{
+	transition: 0s;
+	background-image: url('thanoshand.gif');
+}
+
+/*______AVENGERIMAGE MAIN BODY________*/
+#avengerbody{
+	width: 100%;
+	height: 700px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	background-image: url('mobilebg.jpeg');
+	background-size: 100% 100%;
+	opacity: 1.0;
+	transition-delay: 2.5s;
+	transition-duration: 3s;
+}
+
+#about{
+  opacity: 1;
+  width: 95%;
+  height: 25%;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(13,13,13,0.8);
+  backdrop-filter: blur(2px);
+  animation-name: round;
+  animation-delay: 0s;
+  animation-duration: 3s;
+}
+
+@keyframes round {
+  0% {opacity:0.0;}
+  100% {opacity: 1.0;}
+}
+
+.about1{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutimg{
+  width: 30px;
+  margin-right: 20px;
+}
+.aboutpara{
+  font-size: 12px;
+  color: #868686;
+  font-family: Sans-Serif;
+}
+
+#marvelitepara{
+  font-weight: 500;
+  font-size: 26px;
+	color: #ffffff;
+	margin-left: 5px;
+	background-color: rgb(255,58,58);
+	padding: 0px 5px 0px 2px;
+	font-family: sans-serif;
+}
+
+/*____________MAIN BODY_______________*/
+#maindiv{
+	width: 100%;
+	height: 700px;
+	margin-top: -1px;
+	display: flex;
+	flex-direction: column;
+	background-image: url('appbg.jpeg');
+	background-repeat: no repeat;
+	background-size: 100% 100%;
+	opacity: 1.0;
+	transition-duration: 3s;
+	transition-delay: 2.5s;
+	display: none;
+}
+
+#leftbar{
+  display: none;
+}
+
+/*_____________MENU BAR_____________*/
+#menubar{
+	width: 100%;
+	height: 130px;
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+	background-color: rgba(0,0,0,0.299);
+	border-bottom: 2px solid black;
+}
+
+/*_____________MENU DIVISION________*/
+.menu{
+	min-width: 200px;
+	height: 100%;
+	opacity: 0.5;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+	margin-left: 5px;
+}
+.menu:hover{
+  border-left: 2px solid red;
+  opacity: 1.0;
+	transition-duration: 200ms;
+}
+.menupara{
+	height: 20px;
+	font-family: sans-serif;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding-left: 2px;
+	border-left: 2px solid red;
+	color: #cad5d7;
+}
+/*+++++++++++++NTH MENU ADD++++++++++*/
+.menu:nth-child(1){
+	background-image: url('Camerica.jpg');
+	background-size: 200px;
+}
+.menu:nth-child(2){
+	background-image: url('Ironman.jpg');
+	background-size: 200px;
+}
+.menu:nth-child(3){
+	background-image: url('Deadpool.jpg');
+	background-size: 200px;
+}
+.menu:nth-child(4){
+	background-image: url('Blackpanther.jpg');
+	background-size: 200px;
+}
+.menu:nth-child(5){
+	background-image: url('Loki.jpg');
+	background-size: 200px;
+}
+.menu:nth-child(6){
+	background-image: url('Thor.jpg');
+	background-size: 200px;
+}
+.menu:nth-child(7){
+	background-image: url('Thanos.jpg');
+	background-size: 200px;
+}
+.menu:nth-child(8){
+	background-image: url('Hulk.jpg');
+	background-size: 200px;
+}
+.menu:nth-child(9){
+	background-image: url('Dstrange.jpg');
+	background-size: 200px;
+}
+
+/*___________CONTENT BAR_____________*/
+.contentbar{
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-direction: column-reverse;
+	overflow-y: scroll;
+	display: none;
+}
+#cont1{
+	display: none;
+}
+#cont2{
+	display: flex;
+}
+/*___________PHOTO BAR_____________*/
+.photobar{
+	width: 50%;
+	min-height: 110%;
+	display: flex;
+}
+.contentimg{
+	width: 330px;
+	margin-top: -100px;
+	margin-left: 10px;
+}
+
+/*___________TEXT BAR_____________*/
+.textbar{
+	width: 100%;
+	min-height: 110%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*_____________NAME BAR_____________*/
+.namebar{
+	width: 100%;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 10px;
+	margin-top: 5px;
+}
+.namepara1{
+	font-size: 36px;
+	font-weight: 900;
+	color: #e0d7d7;
+	margin-left: 0px;
+	padding: 0px 5px 0px 2px;
+	border-bottom: 3px solid red;
+}
+.namepara2{
+  font-size: 34px;
+	color: #e0d7d7;
+	margin-left: 20px;
+}
+/*_____________DESC BAR_____________*/
+.descbar{
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-y: scroll;
+}
+.descpara{
+  min-height: 1000px;
+	font-size: 12px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	color: #e0d7d7;
+	text-align: justify;
+}
+
+
+/*____________FOOTER_______________*/
+#footer{
+	width: 100%;
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #0e0707;
+}
+#footer1{
+	width: 70%;
+	height: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 0px;
+}
+#footer2{
+	width: 70%;
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 16px;
+}
+#footer3{
+	width: 60%;
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 4px;
+}
+.footer1para1{
+  margin-top: 10px;
+	display: inline-block;
+	font-size: 14px;
+	color: white;
+	border-bottom: 1px solid red;
+}
+.footerpara{
+  margin-top: 4px;
+	font-size: 8px;
+	line-height: 12px;
+	color: white;
+	text-align: justify;
+}
+#footer a img{
+  margin-top: 4px;
+  margin-left: -45px;
+	width: 20px;
+	cursor: pointer;
+}
+#endfooter{
+  width:100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
