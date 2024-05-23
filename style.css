@@ -2,30 +2,36 @@
   margin: 0px;
   padding: 0px;
 }
+body{
+	background-color: black;
+	overflow-x: hidden;
+}
 
+body::-webkit-scrollbar{
+	display: none;
+}
 /*___________HEADER DIVISION____________*/
 #header{
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	background-color: #0e0707;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	padding: 0px 10px;
 }
 #himg1{
-	width: 150px;
+	width: 120px;
 }
 #himg2{
-	margin-left: 34%;
-	width: 40px;
-	margin-top: -10px;
+	width: 30px;
 	padding: 3px 8px;
 	border-bottom: 3px solid #68d5f0b5;
 }
 #himg3{
-	margin-top: -5px;
-	margin-left: 38%;
-	width: 50px;
-	height: 55px;
+	width: 40px;
+	height: 45px;
+	margin-right: 25px;
 	border-bottom: 2px solid orange;
 	background-image: url('thanoshand.jpg');
 	background-size: 100%;
@@ -39,7 +45,7 @@
 /*______AVENGERIMAGE MAIN BODY________*/
 #avengerbody{
 	width: 100%;
-	height: 700px;
+	height: 96vh;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -56,13 +62,13 @@
 /*____________MAIN BODY_______________*/
 #maindiv{
 	width: 100%;
-	height: 700px;
+	height: 96vh;
 	margin-top: -2px;
 	align-items: center;
 	display: flex;
 	background-image: url('bg1.jpg');
-	background-repeat: no repeat;
-	opacity: 1.0;
+	background-size: 100%;
+	background-repeat: no-repeat;
 	transition-duration: 3s;
 	transition-delay: 2.5s;
 	display: none;
@@ -70,24 +76,26 @@
 
 /*__________LEFT ICON BAR____________*/
 #leftbar{
-	width: 3%;
+	width: 2%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: flex-end;
+	background-color: rgba(255, 0, 0, 0.212);
 }
 #scrollup{
-	width: 80%;
-	height: 5%;
-	margin-top: 450px;
+	width: 90%;
+	height: 4%;
+	margin-bottom: 50px;
 	background-image: url('scrollup.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
 #scrolldown{
-	width: 80%;
-	height: 5%;
-	margin-top: 80px;
+	width: 90%;
+	height: 4%;
+	margin-bottom: 20px;
 	background-image: url('scrolldown.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -101,24 +109,46 @@
 
 /*_____________MENU BAR_____________*/
 #menubar{
-	width: 26%;
+	width: 25%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	overflow-y: scroll;
+	margin-left: 8px;
+}
+
+#menubar::-webkit-scrollbar{
+	display: none;
 }
 
 /*_____________MENU DIVISION________*/
 .menu{
-	width: 93%;
-	min-height: 150px;
-	margin-top: 15px;
-	opacity: 0.4;
-	background-repeat: no-repeat;
-}
-.menu:hover{
 	width: 100%;
-  opacity: 1.0;
+	min-height: 200px;
+	margin-top: 15px;
+	opacity: 0.5;
+	background-repeat: no-repeat;
+	background-size: 400px;
+	animation: animatemenu 800ms 1 ease-out;
+}
+
+@keyframes animatemenu{
+	0%{
+		opacity: 0.0;
+		margin-top: 100px;
+	}
+	100%{
+		opacity: 0.5;
+		margin-top: 15px;
+	}
+}
+
+
+
+.menu:hover{
+	width: 110%;
+	border-left: 2px solid rgba(255, 0, 0, 0.815);
+  	opacity: 1.0;
 	transition-duration: 200ms;
 }
 .menupara{
@@ -133,44 +163,44 @@
 /*+++++++++++++NTH MENU ADD++++++++++*/
 .menu:nth-child(1){
 	background-image: url('Camerica.jpg');
-	background-size: 300px;
+	
 }
 .menu:nth-child(2){
 	background-image: url('Ironman.jpg');
-	background-size: 300px;
+	
 }
 .menu:nth-child(3){
 	background-image: url('Deadpool.jpg');
-	background-size: 300px;
+	
 }
 .menu:nth-child(4){
 	background-image: url('Blackpanther.jpg');
-	background-size: 300px;
+	
 }
 .menu:nth-child(5){
 	background-image: url('Loki.jpg');
-	background-size: 300px;
+	
 }
 .menu:nth-child(6){
 	background-image: url('Thor.jpg');
-	background-size: 300px;
+	
 }
 .menu:nth-child(7){
 	background-image: url('Thanos.jpg');
-	background-size: 300px;
+	
 }
 .menu:nth-child(8){
 	background-image: url('Hulk.jpg');
-	background-size: 300px;
+	
 }
 .menu:nth-child(9){
 	background-image: url('Dstrange.jpg');
-	background-size: 300px;
+	
 }
 
 /*___________CONTENT BAR_____________*/
 .contentbar{
-	width: 70%;
+	width: 75%;
 	height: 100%;
 	align-items: center;
 	display: flex;
@@ -182,11 +212,12 @@
 
 /*___________TEXT BAR_____________*/
 .textbar{
-	width: 60%;
+	width: 75%;
 	height: 100%;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	background-color: rgba(255, 0, 0, 0.171);
 }
 
 /*_____________NAME BAR_____________*/
@@ -198,16 +229,17 @@
 	padding-bottom: 10px;
 }
 .namepara1{
-	font-size: 38px;
+	font-size: 60px;
 	font-weight: 800;
 	color: #e0d7d7;
 	margin-top: 50px;
 	margin-left: 25px;
-	border-bottom: 3px solid red;
+	padding: 0px 20px;
+	background-color: rgba(255, 0, 0, 0.822);
 	font-family: 'Gantari', sans-serif;
 }
 .namepara2{
-  font-size: 32px;
+  font-size: 50px;
 	color: #e0d7d7;
 	margin-top: 50px;
 	margin-left: 14px;
@@ -217,11 +249,16 @@
 .descbar{
 	width: 100%;
 	height: 100%;
+	margin-top: 20px;
 	overflow-y: scroll;
+	animation: animate 600ms  1 ease-out;
+}
+.descbar::-webkit-scrollbar{
+	display: none;
 }
 .descpara{
   min-height: 100%;
-	font-size: 14px;
+	font-size: 16px;
 	margin-left: 25px;
 	margin-bottom: 10px;
 	padding-right: 25px;
@@ -230,102 +267,143 @@
 	font-family: 'Marvel', sans-serif;
 }
 
+@keyframes animate{
+	0%{
+		margin-top: 100px;
+		opacity: 0.0;
+	}
+	100%{
+		margin-top: 20px;
+		opacity: 1.0;
+	}
+}
+
 /*___________PHOTO BAR_____________*/
 .photobar{
-	width: 40%;
+	width: 25%;
 	height: 100%;
+	margin-left: 50px;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .contentimg{
-  margin-top: 80px;
-	width: 330px;
-	margin-left: -50px;
+	width: 450px;
+	animation: moveupdown 5s infinite linear;
+}
+
+
+
+@keyframes moveupdown{
+	0%{
+		margin-top: 50px;
+	}
+	50%{
+		margin-top: -50px;
+	}
+	100%{
+		margin-top: 50px;
+	}
 }
 
 /*____________FOOTER_______________*/
 #footer{
 	width: 100%;
 	height: 150px;
-	background-color: #0e0707;
+	background-color: black;
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 }
 #footer1{
 	width: 25%;
 	height: 100%;
-	margin-left: 40px;
 }
+#footer2{
+	width: 30%;
+	height: 100%;
+	display: flex;
+	margin-right: 40px;
+	flex-direction: column;
+	align-items: center;
+}
+#footer3{
+	width: 20%;
+	height: 100%;
+}
+
 .footer1para1{
 	display: inline-block;
-	font-size: 20px;
+	font-size: 28px;
 	color: white;
-	margin-top: 30px;
+	margin-top: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-decoration-line: underline;
 }
 .footerpara{
 	font-size: 14px;
 	color: white;
 	text-align: justify;
-}
-#footer2{
-	width: 30%;
-	height: 100%;
-	margin-left: 170px;
-}
-#footer3{
-	width: 20%;
-	height: 100%;
-	margin-left: 40px;
+	margin-top: 10px;
+	font-family: 'Marvel';
+	font-weight: 100;
 }
 #footer a img{
-	width: 30px;
+	width: 25px;
 	margin-left: -5px;
-	cursor: pointe;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+#ytimg{
+	margin-left: 10px;
+	width: 30px;
 }
 #endfooter{
   width:100%;
   height: 40px;
-  margin-top: -1px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  color: white;
   background-color: black;
 }
-
+#endfooter p{
+	margin-left: 40px;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  	font-weight: 100;
+}
 
 @media only screen and (max-width:600px)
 and (orientation: portrait){
 
 body{
   width: 100%;
+  overflow-x: hidden;
 }
-
 /*___________HEADER DIVISION___________*/
 #header{
-	width: 100%;
+	width: 95%;
 	height: 40px;
 	background-color: #0e0707;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 #himg1{
 	width: 80px;
 }
 #himg2{
-	margin-left: 25%;
-	width: 25px;
-	height: 26px;
-	margin-top: 0px;
-	padding: 2px 6px;
+	width: 20px;
+	height: 22px;
+	margin-right: 25px;
 	border-bottom: 2px solid #68d5f0b5;
 }
 #himg3{
-	margin-top: -5px;
-	margin-left: 33%;
-	width: 32px;
-	height: 35px;
+	margin-top: -4px;
+	width: 28px;
+	height: 28px;
+	margin-right: 0px;
 	border-bottom: 2px solid orange;
 	background-image: url('thanoshand.jpg');
 	background-size: 100%;
@@ -420,7 +498,7 @@ body{
 
 /*_____________MENU BAR_____________*/
 #menubar{
-	width: 100%;
+	width: 98%;
 	height: 130px;
 	display: flex;
 	flex-direction: row;
@@ -428,6 +506,7 @@ body{
 	background-color: rgba(0,0,0,0.299);
 	border-bottom: 2px solid black;
 }
+
 
 /*_____________MENU DIVISION________*/
 .menu{
@@ -509,14 +588,15 @@ body{
 /*___________PHOTO BAR_____________*/
 .photobar{
 	width: 50%;
-	min-height: 110%;
+	min-height: 130%;
 	display: flex;
 }
 .contentimg{
 	width: 330px;
-	margin-top: -100px;
-	margin-left: 10px;
+	margin-left: -30px;
 }
+
+
 
 /*___________TEXT BAR_____________*/
 .textbar{
@@ -572,14 +652,14 @@ body{
 /*____________FOOTER_______________*/
 #footer{
 	width: 100%;
-	min-height: 250px;
+	min-height: 200px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background-color: #0e0707;
 }
 #footer1{
-	width: 70%;
+	width: 60%;
 	height: 25%;
 	display: flex;
 	flex-direction: column;
@@ -592,56 +672,31 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-left: 16px;
+	margin-left: 50px;
 }
 #footer3{
-	width: 60%;
-	height: 30%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-left: 4px;
+	display: none;
 }
 .footer1para1{
-  margin-top: 10px;
 	display: inline-block;
-	font-size: 14px;
+	font-size: 22px;
 	color: white;
-	border-bottom: 1px solid red;
+	margin-top: 0px;
 }
 .footerpara{
   margin-top: 4px;
-	font-size: 8px;
+	font-size: 10px;
 	line-height: 12px;
 	color: white;
 	text-align: justify;
 }
-#footer a img{
-  margin-top: 4px;
-  margin-left: -45px;
-	width: 20px;
-	cursor: pointer;
-}
 #endfooter{
   width:100%;
   height: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  background-color: black;
-  }
-  
+  margin-top: 10px;
+  margin-left: -15px;
 }
 
 
 
-
-
-
-
-
-
-
-
+}

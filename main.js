@@ -34,11 +34,13 @@ function changebg(){
 		document.getElementById('avengerbody').style.display = "none";
 		document.getElementById('maindiv').style.display = "flex";
 		document.getElementById('himg2').style.borderBottom = "3px solid red";
+		document.getElementById('footer').style.backgroundColor = "rgba(255, 0, 0, 0.212)";
 	}
 	else{
 		document.getElementById('avengerbody').style.display = "flex";
 		document.getElementById('maindiv').style.display = "none";
 		document.getElementById('himg2').style.borderBottom = "3px solid #68d5f0b5";
+		document.getElementById('footer').style.backgroundColor = "black";
 	}
 }
 
